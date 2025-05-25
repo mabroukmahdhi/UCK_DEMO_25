@@ -1,0 +1,6 @@
+@UCK.Api_HostAddress = http://localhost:5092
+
+GET {{UCK.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
