@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCK.Api", "UCK.Api\UCK.Api.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCK.Api.Tests.Unit", "UCK.Api.Tests.Unit\UCK.Api.Tests.Unit.csproj", "{1186E2C6-2833-429D-B472-7EE47C80A9CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCK.Web", "UCK.Web\UCK.Web.csproj", "{40CFBBF4-4330-4BA2-85F0-5A82DA41B58D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1186E2C6-2833-429D-B472-7EE47C80A9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1186E2C6-2833-429D-B472-7EE47C80A9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1186E2C6-2833-429D-B472-7EE47C80A9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40CFBBF4-4330-4BA2-85F0-5A82DA41B58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40CFBBF4-4330-4BA2-85F0-5A82DA41B58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40CFBBF4-4330-4BA2-85F0-5A82DA41B58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40CFBBF4-4330-4BA2-85F0-5A82DA41B58D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
