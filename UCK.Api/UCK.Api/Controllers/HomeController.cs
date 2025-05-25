@@ -7,6 +7,7 @@ namespace UCK.Api.Controllers
     [Route("api/[controller]")]
     public class HomeController : RESTFulController
     {
+        [HttpGet]
         public string Get() =>
             "Welcome to UCK API! This is the home controller.";
     }
