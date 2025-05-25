@@ -1,3 +1,4 @@
+using AutoInject;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -13,6 +14,8 @@ namespace UCK.Web
 
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
+
+            builder.Services.UseAutoInjection();
 
             var app = builder.Build();
 

@@ -1,0 +1,13 @@
+@* @if (attendees == null)
+{
+    <text>Loading...</text>
+}
+else
+{
+    @foreach (var attendee in attendees)
+    {
+        <div class="attendee">
+            <h3>@attendee.FirstName @attendee.LastName</h3>
+        </div>
+    }
+} *@
