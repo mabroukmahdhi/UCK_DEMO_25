@@ -23,5 +23,13 @@ namespace UCK.Api.Brokers.Storages
 
             return attendeeEntityEntry.Entity;
         }
+
+        public IQueryable<attendee> SelectAllattendees()
+        {
+            using var broker =
+                new StorageBroker(this.configuration);
+
+            return broker.attendees;
+        }
     }
 }
