@@ -1,0 +1,27 @@
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using UCK.Api.Models.attendees;
+
+namespace UCK.Api.Brokers.Storages
+{
+    public partial class StorageBroker
+    {
+        public DbSet<attendee> attendees { get; set; }
+
+        public async ValueTask<attendee> InsertattendeeAsync(attendee attendee)
+        {
+            using var broker =
+                new StorageBroker(this.configuration);
+
+            EntityEntry<attendee> attendeeEntityEntry =
+                await broker.attendees.AddAsync(attendee);
+
+            await broker.SaveChangesAsync();
+
+            return attendeeEntityEntry.Entity;
+        }
+    }
+}
