@@ -11,5 +11,6 @@ namespace UCK.Api.Brokers.Storages
         IQueryable<attendee> SelectAllattendees();
         ValueTask<attendee> SelectattendeeByIdAsync(Guid attendeeId);
         ValueTask<attendee> UpdateattendeeAsync(attendee attendee);
+        ValueTask<attendee> DeleteattendeeAsync(attendee attendee);
     }
 }

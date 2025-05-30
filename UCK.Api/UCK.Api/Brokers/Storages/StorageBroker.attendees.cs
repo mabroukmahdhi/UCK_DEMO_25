@@ -52,5 +52,18 @@ namespace UCK.Api.Brokers.Storages
 
             return attendeeEntityEntry.Entity;
         }
+
+        public async ValueTask<attendee> DeleteattendeeAsync(attendee attendee)
+        {
+            using var broker =
+                new StorageBroker(this.configuration);
+
+            EntityEntry<attendee> attendeeEntityEntry =
+                broker.attendees.Remove(attendee);
+
+            await broker.SaveChangesAsync();
+
+            return attendeeEntityEntry.Entity;
+        }
     }
 }
