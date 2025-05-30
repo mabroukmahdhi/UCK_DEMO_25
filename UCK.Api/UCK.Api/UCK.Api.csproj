@@ -9,10 +9,16 @@
   <ItemGroup>
     <PackageReference Include="Campsis.AutoInject" Version="0.1.1" />
     <PackageReference Include="EFxceptions" Version="1.0.3" />
+    <PackageReference Include="EFxceptions.Identity" Version="0.4.5" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="RESTFulSense" Version="3.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.2" />
