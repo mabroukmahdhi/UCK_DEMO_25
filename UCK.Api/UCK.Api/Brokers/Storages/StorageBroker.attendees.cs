@@ -39,5 +39,18 @@ namespace UCK.Api.Brokers.Storages
 
             return await broker.attendees.FindAsync(attendeeId);
         }
+
+        public async ValueTask<attendee> UpdateattendeeAsync(attendee attendee)
+        {
+            using var broker =
+                new StorageBroker(this.configuration);
+
+            EntityEntry<attendee> attendeeEntityEntry =
+                broker.attendees.Update(attendee);
+
+            await broker.SaveChangesAsync();
+
+            return attendeeEntityEntry.Entity;
+        }
     }
 }
