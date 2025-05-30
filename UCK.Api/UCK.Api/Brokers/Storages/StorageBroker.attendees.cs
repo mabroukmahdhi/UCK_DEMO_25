@@ -31,5 +31,13 @@ namespace UCK.Api.Brokers.Storages
 
             return broker.attendees;
         }
+
+        public async ValueTask<attendee> SelectattendeeByIdAsync(Guid attendeeId)
+        {
+            using var broker =
+                new StorageBroker(this.configuration);
+
+            return await broker.attendees.FindAsync(attendeeId);
+        }
     }
 }
